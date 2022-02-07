@@ -51,6 +51,10 @@
                         @if( Auth::user()->rol == 'cliente')
                         @include('layouts.menuCliente')
                         @endif
+                        
+                        @if( Auth::user()->rol == null)
+                        @include('layouts.menuAdmin')
+                        @endif
                     </div>
                 </div>
             </div>
