@@ -16,12 +16,12 @@
                     <label class="field field_v3">
                         <input id="email" name="email" class="field__input" placeholder="000">
                         <span class="field__label-wrap">
-                            <span class="field__label">Correo Electronico</span>
+                            <span class="field__label">Codigo de Cliente</span>
                         </span>
                     </label>
                     @error('email')
                     <span class="invalid-feedback" role="alert">
-                        <strong>Usuario no registrado</strong>
+                        <strong>Cliente no registrado</strong>
                     </span>
                     @enderror
                     <br>
@@ -378,6 +378,7 @@
     .right {
         background: #474A59;
         box-shadow: 0px 0px 40px 16px rgba(0, 0, 0, 0.22);
+        border-radius: 2%;
         color: #F1F1F2;
         position: relative;
         width: 50%;
