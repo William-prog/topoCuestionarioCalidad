@@ -44,17 +44,40 @@
                         <span></span>
                     </button>
                     <div class="navbar-navigation">
-                        @if( Auth::user()->rol == 'admin')
-                        @include('layouts.menuAdmin')
-                        @endif
+                        <ul>
+                            @guest
+                            <li>
+                                <a href="{{ route('login') }}">{{ __('Iniciar sesión    ') }}<i class="fas fa-sign-in-alt"></i></a>
+                            </li>
+                            <li>
+                                <a href="{{ route('register') }}">{{ __('Crear cuenta   ') }}<i class="fas fa-user-plus"></i></a>
+                            </li>
+                            @else
 
-                        @if( Auth::user()->rol == 'cliente')
-                        @include('layouts.menuCliente')
-                        @endif
-                        
-                        @if( Auth::user()->rol == null)
-                        @include('layouts.menuAdmin')
-                        @endif
+                            @if( Auth::user()->rol == 'admin')
+                            @include('layouts.menuAdmin')
+                            @endif
+
+                            @if( Auth::user()->rol == 'cliente')
+                            @include('layouts.menuCliente')
+                            @endif
+
+                            <li>
+                                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    <span class="title">
+                                        {{ __('Bienvenido ') }} {{ Auth::user()->name }}
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </span>
+                                    <span class="icon"><i class="fas fa-walking"></i></span>
+                                </a>
+                            </li>
+                            @endguest
+                        </ul>
+
+
+
                     </div>
                 </div>
             </div>
