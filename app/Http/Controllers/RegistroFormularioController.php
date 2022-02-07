@@ -35,7 +35,7 @@ class RegistroFormularioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return view('mensajes.agradecimiento'); 
     }
 
     /**

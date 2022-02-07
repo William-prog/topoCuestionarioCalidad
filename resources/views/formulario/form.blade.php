@@ -32,6 +32,7 @@
     input[type='radio']:checked+.radio {
         background-color: #FF771F;
         border: 2px solid #FF771F;
+        bottom: 2.55;
     }
 
     input[type='radio']:checked+.radio::before {
@@ -41,6 +42,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        
     }
 
     .fila {
@@ -52,9 +54,10 @@
     .fila label {
         display: block;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
         margin-bottom: 0px;
+        bottom: 2.55;
 
     }
 
