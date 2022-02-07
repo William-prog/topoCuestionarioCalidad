@@ -14,12 +14,12 @@
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <label class="field field_v3">
-                        <input id="codeUser" name="codeUser" class="field__input" placeholder="000">
+                        <input id="email" name="email" class="field__input" placeholder="000">
                         <span class="field__label-wrap">
-                            <span class="field__label">Codigo de Cliente</span>
+                            <span class="field__label">Correo Electronico</span>
                         </span>
                     </label>
-                    @error('codeUser')
+                    @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>Usuario no registrado</strong>
                     </span>
