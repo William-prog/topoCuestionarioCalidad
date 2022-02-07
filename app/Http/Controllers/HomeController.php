@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+
+        $rol = Auth::user()->rol;
+        
+        if ($rol == 'cliente') {
+            return view('formulario.create');
+        } else if ($rol == 'admin') {
+            return view('home');
+        }
     }
 }
