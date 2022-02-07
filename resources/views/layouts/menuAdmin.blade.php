@@ -8,7 +8,7 @@
                 <a href="/home" style="cursor: pointer">{{ __('Objetivo ') }}<i class="fas fa-chart-bar"></i></a>
             </li>
             <li>
-                <a href="/estadisticas" style="cursor: pointer">{{ __('Estadisticas ') }}<i class="fas fa-paste"></i></a>
+                <a href="" style="cursor: pointer">{{ __('Estadisticas ') }}<i class="fas fa-paste"></i></a>
             </li>
         </ul>
     </li>
