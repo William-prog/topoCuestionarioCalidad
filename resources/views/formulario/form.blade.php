@@ -42,7 +42,7 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        
+
     }
 
     .fila {
@@ -226,13 +226,6 @@
                 <div class="card-body">
                     <h5 class="card-title">
                         <h4 class="text-center">
-                            <!-- <h1>
-                                <span style="color: #97C774">H</span>
-                                <span style="color: #B63E98">e</span>
-                                <span style="color: #D18E62">l</span>
-                                <span style="color: #DB3E41">l</span>
-                                <span style="color: #1BABA5">o</span>, I speak code.
-                            </h1> -->
                             Encuesta de satisfacción del cliente
                         </h4>
                     </h5>
@@ -398,11 +391,11 @@
                         </div>
 
                         <div class="form-group col-md-12">
-                            <label for="form_1"> <strong> ccc </strong></label>
+                            <label for="form_1"> <strong> ...... </strong></label>
                             <div class="row mt-1">
                                 <div class="form-group col-md-3">
                                     <div class='fila bdr'>
-                                        <input id="preg_A" type="radio" name="preg_1" value="Pesimo" />
+                                        <input id="preg_A" type="radio" name="preg_4" value="Pesimo" />
                                         <label for="preg_A" class='radio' tabindex='1'></label>
                                         <label for="preg_A">Pesimo </label>
                                     </div>
@@ -410,7 +403,7 @@
 
                                 <div class="form-group col-md-3">
                                     <div class='fila bdr'>
-                                        <input id="preg_B" type="radio" name="preg_1" value="Insatisfecho" />
+                                        <input id="preg_B" type="radio" name="preg_4" value="Insatisfecho" />
                                         <label for="preg_B" class='radio' tabindex='1'></label>
                                         <label for="preg_B">Insatisfecho </label>
                                     </div>
@@ -418,7 +411,7 @@
 
                                 <div class="form-group col-md-3">
                                     <div class='fila bdr'>
-                                        <input id="preg_C" type="radio" name="preg_1" value="Satisfecho" />
+                                        <input id="preg_C" type="radio" name="preg_4" value="Satisfecho" />
                                         <label for="preg_C" class='radio' tabindex='1'></label>
                                         <label for="preg_C">Satisfecho </label>
                                     </div>
@@ -426,16 +419,13 @@
 
                                 <div class="form-group col-md-3">
                                     <div class='fila bdr'>
-                                        <input id="preg_D" type="radio" name="preg_1" value="Muy Satisfecho" />
+                                        <input id="preg_D" type="radio" name="preg_4" value="Muy Satisfecho" />
                                         <label for="preg_D" class='radio' tabindex='1'></label>
                                         <label for="preg_D">Muy Satisfecho </label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
 
                         <div class="form-group col-md-12">
                             <label for=""> <strong> Experiencia del cliente: </strong> </label>

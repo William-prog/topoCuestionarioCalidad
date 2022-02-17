@@ -33,7 +33,7 @@
 </head>
 
 <body>
-    <div id="app">
+<div id="app">
         <nav class="navbar-custom">
             <div class="container-menu">
                 <div class="header-navigation-menu">
@@ -75,9 +75,6 @@
                             </li>
                             @endguest
                         </ul>
-
-
-
                     </div>
                 </div>
             </div>
